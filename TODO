@@ -1,0 +1,2 @@
+use gnome-autogen
+use libgd or better, drop libgd if possible
