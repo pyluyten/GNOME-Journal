@@ -7,7 +7,7 @@ srcdir=${srcdir:-.}
 
 # default version requirements ...
 REQUIRED_AUTOCONF_VERSION=${REQUIRED_AUTOCONF_VERSION:-2.53}
-REQUIRED_AUTOMAKE_VERSION=${REQUIRED_AUTOMAKE_VERSION:-1.9}
+REQUIRED_AUTOMAKE_VERSION=${REQUIRED_AUTOMAKE_VERSION:-1.13}
 REQUIRED_LIBTOOL_VERSION=${REQUIRED_LIBTOOL_VERSION:-1.4.3}
 REQUIRED_GETTEXT_VERSION=${REQUIRED_GETTEXT_VERSION:-0.10.40}
 REQUIRED_GLIB_GETTEXT_VERSION=${REQUIRED_GLIB_GETTEXT_VERSION:-2.2.0}
@@ -332,6 +332,7 @@ case $REQUIRED_AUTOMAKE_VERSION in
     1.9*) automake_progs="automake-1.11 automake-1.10 automake-1.9" ;;
     1.10*) automake_progs="automake-1.11 automake-1.10" ;;
     1.11*) automake_progs="automake-1.11" ;;
+    1.13*) automake_progs="automake-1.13" ;;    
 esac
 version_check automake AUTOMAKE "$automake_progs" $REQUIRED_AUTOMAKE_VERSION \
     "http://ftp.gnu.org/pub/gnu/automake/automake-$REQUIRED_AUTOMAKE_VERSION.tar.gz"
